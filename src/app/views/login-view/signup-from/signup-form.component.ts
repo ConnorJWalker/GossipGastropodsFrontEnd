@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { SignupRequest } from '../../../models/requests/auth/signup-request';
 import { AuthService } from 'src/app/services/auth.service';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-signup-form',
@@ -22,7 +23,7 @@ export class SignupFormComponent implements OnInit {
   }
 
   onSubmit() {
-    this.authService.sendSignupRequest(this.signupRequest).subscribe(res => console.log(res.token));
+    this.authService.sendSignupRequest(this.signupRequest).subscribe(res => User.saveToken(res.token));
   }
 
 }
