@@ -2,17 +2,17 @@
   <h1>Sign Up For Gossip Gastropods</h1>
 
   <div class="input-halves">
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Last Name">
+    <input [(ngModel)]="signupRequest.firstName" name="firstName" type="text" placeholder="First Name">
+    <input [(ngModel)]="signupRequest.lastName" name="lastName" type="text" placeholder="Last Name">
   </div>
-  <input type="email" placeholder="Email Address">
+  <input [(ngModel)]="signupRequest.email" name="email" type="email" placeholder="Email Address">
   <div class="input-halves">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm Password">
+    <input [(ngModel)]="signupRequest.password" name="password" type="password" placeholder="Password">
+    <input [(ngModel)]="signupRequest.passwordConf" name="passwordConf" type="password" placeholder="Confirm Password">
   </div>
 
   <div class="btn-container">
     <button (click)="onGoToLoginClick()" type="button" class="btn-accent">Go To Log In</button>
-    <button class="btn-main">Sign Up</button>
+    <button (click)="onSubmit()" class="btn-main">Sign Up</button>
   </div>
 </form>
