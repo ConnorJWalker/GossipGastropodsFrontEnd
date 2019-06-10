@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --colour-white: #f4f4f4;
+  --colour-main: #73F1B4;
+  --colour-accent: #2BAEAD;
+  --colour-danger: #D95421;
+  --colour-grey: #555566;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--colour-grey);
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  border-radius: 0;
+  border: 0;
+  padding: 0.7em 3em;
+  cursor: pointer;
+}
+
+.btn-main {
+  background-color: var(--colour-main);
+  color: var(--colour-grey);
+}
+
+.btn-accent {
+  background-color: var(--colour-accent);
+  color: #F2F2F2;
+}
