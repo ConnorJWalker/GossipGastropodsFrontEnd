@@ -1,0 +1,52 @@
+.auth-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/9044/pexels-photo.jpg?cs=srgb&dl=bokeh-city-dark-9044.jpg&fm=jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  background-color: #fff;
+  margin: -5% 2em 0;
+  padding: 1em;
+}
+
+form h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  padding: 0.4em;
+  margin: 10px 0;
+}
+
+.btn-container button {
+  width: calc(50% - 0.5em);
+}
+
+.btn-container button:first-child {
+  margin-right: 1em;
+}
+
+@media screen and (min-width: 800px) {
+  .form-container {
+    margin: 0 auto;
+    background-size: cover;
+    width: 750px;
+  }
+
+  .input-halves input {
+    width: calc(50% - 0.5em);
+  }
+
+  .input-halves input:first-child {
+    margin-right: 1em;
+  }
+}
